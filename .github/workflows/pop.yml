@@ -2,7 +2,7 @@ name: pop
 
 on:
   push:
-    branches: ["main"]
+    branches: ["mainu"]
 
 jobs:
   build:
@@ -55,4 +55,5 @@ jobs:
         sleep 5
         xvfb-run python run-n-login.py ${{ matrix.rangeIndex }}
     - name: done
+
       run: exit
